@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAYES HIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🍔 HAYES HIT</h1>
+        <p>Fresh Food, Fast Delivery</p>
+
+        <div class="menu">
+
+            <div class="card">
+                <h3>Zinger Burger</h3>
+                <p>₹200</p>
+                <button onclick="addToCart('Zinger Burger', 200)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Pizza</h3>
+                <p>₹150</p>
+                <button onclick="addToCart('Pizza', 150)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Loaded Fries</h3>
+                <p>₹120</p>
+                <button onclick="addToCart('Loaded Fries', 120)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>French Fries</h3>
+                <p>₹90</p>
+                <button onclick="addToCart('French Fries', 90)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Coke</h3>
+                <p>₹40</p>
+                <button onclick="addToCart('Coke', 40)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Sprite</h3>
+                <p>₹40</p>
+                <button onclick="addToCart('Sprite', 40)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Extra Dip</h3>
+                <p>₹3</p>
+                <button onclick="addToCart('Extra Dip', 3)">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="cart-section">
+            <h2>🛒 Your Cart</h2>
+            <ul id="cart"></ul>
+
+            <h3>Total: ₹<span id="total">0</span></h3>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Checkout
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
